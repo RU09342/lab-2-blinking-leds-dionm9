@@ -12,6 +12,8 @@ In the beginning part of the exercise, I would say that you can use the 5V/3.3V 
 ## "What about the buttons and resistors and LEDS?"
 You remember those parts bins in the back of the teaching labs? They contain most everything you will need to do this portion of the lab. You should really make a effort to try and replicate what is on those development boards on the breadboard so you can begin to see what is needed to design with a microcontroller. Mess around with different color LEDS and see if they behave the same as the simple Red LEDs.
 
+![Alt text](https://github.com/RU09342/lab-2-blinking-leds-dionm9/blob/master/Off_Board%20Blink/20171011_113932_HDR.jpg)
+
 # YOU NEED TO CREATE THE FOLLOWING FOLDER
 * MSP430G2553
 
