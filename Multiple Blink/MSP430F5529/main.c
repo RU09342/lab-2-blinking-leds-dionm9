@@ -16,14 +16,14 @@ int main(void)
 
     P1OUT=0x00;//clears p1 before use
     P4OUT=0x00;//clears p4 before use
-	while(1){
-	            P1OUT|=BIT0;// turns led 1 on
-	        _delay_cycles(100000);//delays 100000 cycles
-	            P4OUT|=BIT7;//turns led 2 on
-	        _delay_cycles(100000);//delays 100000 cycles
-	            P1OUT&=~BIT0;//turns led 1 off
-	        _delay_cycles(100000);//delays 100000 cycles
-	            P4OUT&=~BIT7;
-	        _delay_cycles(100000);//delays 100000 cycles
-	    }
+    int count =0; //initialize count to 0
+    while(1){
+        count+=1;//increments count
+        if (count%2500==0)//checks if count is divisable by 5000
+            P1OUT^=BIT0;//toggles LED 1
+        if (count%5000==0)//checks if count is divisable by 2500
+            P4OUT^=BIT7;//toggles LED 2
+        if(count==5000)//checks if count is 50000
+            count=0;//sets count back to 0
+    }
 }
